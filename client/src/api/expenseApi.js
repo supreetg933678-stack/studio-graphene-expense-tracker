@@ -27,6 +27,7 @@ export function deleteExpense(id) {
   return apiClient.delete(`/expenses/${id}`);
 }
 
+
 export function fetchSummary() {
   return apiClient.get('/summary').then((response) => response.data);
 }
