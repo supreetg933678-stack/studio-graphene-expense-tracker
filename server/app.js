@@ -10,7 +10,9 @@ const { requestLogger } = require('./middleware/logger');
 const app = express();
 
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  origin: process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',')
+    : true,
   credentials: true,
 };
 
