@@ -10,7 +10,7 @@ const { requestLogger } = require('./middleware/logger');
 const app = express();
 
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : true,
+  origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
   credentials: true,
 };
 
@@ -18,11 +18,10 @@ app.use(requestLogger);
 app.use(cors(corsOptions));
 app.use(express.json());
 
+
+app.use('/api/expenses', expenseRoutes);
 app.use('/api/summary', summaryRoutes);
 app.use('/api/export/csv', exportRoutes);
-app.use('/api/expenses/summary', summaryRoutes);
-app.use('/api/expenses/export/csv', exportRoutes);
-app.use('/api/expenses', expenseRoutes);
 
 app.get('/api/health', (req, res) => {
   res.json({ success: true, data: { status: 'ok', uptime: process.uptime() } });
