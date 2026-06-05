@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a2274a40-8a7d-4bac-98fe-6978ee20442a",
+    "amount": 10000,
+    "category": "Food",
+    "date": "2026-06-03",
+    "note": "this is food ",
+    "createdAt": "2026-06-05T19:10:48.494Z",
+    "updatedAt": "2026-06-05T19:10:48.496Z"
+  },
+  {
+    "id": "62b26fab-420e-4182-8411-52bc129d6955",
+    "amount": 15,
+    "category": "Transport",
+    "date": "2026-06-05T20:27:51.737Z",
+    "note": "Taxi",
+    "createdAt": "2026-06-05T20:27:51.772Z",
+    "updatedAt": "2026-06-05T20:27:51.772Z"
+  },
+  {
+    "id": "c4a14e96-2d16-4720-986b-0c35f4bf14f0",
+    "amount": 15,
+    "category": "Transport",
+    "date": "2026-06-05T20:28:40.897Z",
+    "note": "Taxi",
+    "createdAt": "2026-06-05T20:28:40.919Z",
+    "updatedAt": "2026-06-05T20:28:40.919Z"
+  },
+  {
+    "id": "f679f0a0-4c5f-413f-ad21-15697274f665",
+    "amount": 15,
+    "category": "Transport",
+    "date": "2026-06-05T20:29:23.108Z",
+    "note": "Taxi",
+    "createdAt": "2026-06-05T20:29:23.128Z",
+    "updatedAt": "2026-06-05T20:29:23.128Z"
+  }
+]
